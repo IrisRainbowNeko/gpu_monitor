@@ -145,4 +145,4 @@ class InfoViser:
 if __name__ == '__main__':
 
     viser = InfoViser()
-    viser.vis_by_user_gpu_count()
+    viser.vis_usage_memory()
