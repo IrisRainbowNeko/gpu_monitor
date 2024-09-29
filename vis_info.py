@@ -56,7 +56,9 @@ def plot_bars(occupy, memory=None, N_row=8, colors = ("#FF0000", "#0000FF")):
         gradientbars(bars, axs[i], colors=colors)
         axs[i].grid(which='major', axis='x', linestyle='-', alpha=0.4, color="#C8C9C9")
         axs[i].set_ylim(-0.5, 0.5)
-        axs[i].set_yticks(y_datas, [str(r) for r in range(N_row)])
+        #axs[i].set_yticks(y_datas, [str(r) for r in range(N_row)])
+        axs[i].set_yticks(y_datas)
+        axs[i].set_yticklabels([str(r) for r in range(N_row)])
         axs[i].set_ylabel(name)
 
     axs[-1].tick_params(axis="x", which="major", length=0, labelsize=14, colors='#C8C9C9')
